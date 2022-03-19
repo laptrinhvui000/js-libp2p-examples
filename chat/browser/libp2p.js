@@ -23,8 +23,8 @@ const createLibp2p = async (peerId) => {
     addresses: {
       listen: [
         // Add the signaling server multiaddr
-        '/ip4/127.0.0.1/tcp/15555/ws/p2p-webrtc-star'
-      ]
+        '/dns4/wrtc-star1.par.dwebops.pub/tcp/443/wss/p2p-webrtc-star'
+        ]
     },
     modules: {
       transport: [Websockets, WebrtcStar],
